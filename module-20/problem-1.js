@@ -25,7 +25,7 @@ function hourToMinutes(hour) {
 }
 
 let result1 = hourToMinutes(15);
-console.log('Minute:', result1);
+// console.log('Minute:', result1);
 
 function minuteToHour(minute) {
     const hour = minute / 60;
@@ -34,4 +34,21 @@ function minuteToHour(minute) {
 }
 
 let result = minuteToHour(1440);
-console.log('Hour:', result);
+// console.log('Hour:', result);
+
+
+// ********** //
+
+
+function convertMinuteToHour(minute) {
+    if (minute <= 60) {
+        console.log(minute);
+    }
+    else {
+        let r = Math.floor(minute / 60);
+        let t = minute % 60;
+        console.log(r + ":" + t);
+    }
+}
+
+(convertMinuteToHour(1135));
